@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang = en> 
+  <head>
+    <meta charset = "UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <style type = "text/css">
+    
+      *,
+      *::before,
+      *::after{
+
+        box-sizing: border-box;
+      }
+      *:focus{
+
+        outline: none;
+      }
+
+      body{
+        padding: 0
+        margin: 0
+        background: #000
+        color: white;
+        font-family: "Oxygen", sans-serif;
+
+      }
+      p{
+        margin-left: 20%;
+        color: white;
+      }
+      h3{
+        margin-left: 20%;
+        color: white;
+      }
+    
+      a{
+        text-decoration: none;
+      }
+      img{
+        width: 100%
+      }
+      aside{
+        position: fixed;
+        background: #222;
+        top: 0px;
+        left: 0px;
+        width: 120px;
+        height: 100%;
+        overflow: none;
+        z-index: 1;
+        text-align: center;
+        padding: 0;
+      }
+
+      aside img{
+        margin-bottom: -3px;
+      }
+
+      .material-icons.md-36{
+        font-size: 36px;
+      }
+
+      aside a{
+        display: block;
+        padding: 15px 0;
+        color: white;
+        transition: all 0.35s;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        letter-spacing: 2px;
+      }
+
+      aside p{
+        margin: 0;
+        padding: 0;
+      }
+      aside a:hover{
+        background: #000;
+      }
+
+      aside nav a:nth-child(2){
+        background: #000;
+      }
+
+      aside nav a:nth-child(2):hover{
+        background: b2b2b2;
+        color:#222
+      }
+
+
+      main{
+        max-width: 980px;
+        background: rgb(0, 0, 0);
+        margin-left: 20%;
+        padding: 12px 50px 12px 50px;
+      }
+
+      header{
+        text-align: center;
+        letter-spacing: 2px;
+      }
+
+      head h1{
+        font-weight: bold;
+        font-size: 4em;
+        letter-spacing: 4px;
+      }
+
+      head h5{
+        font-weight: 300;
+        font-size: 1em;
+        letter-spacing: 4px;
+        color: #b2b2b2;
+      }
+      .about
+      .folio
+      .contact{
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-weight: 300;
+      }
+      h2{
+        color: white;
+        margin-left: 20%;
+      }
+      .folio h2
+      .contact h2{
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: line-through;
+        padding-bottom: 10px;
+        margin: 100px 0 0 0;
+        letter-spacing: 4px;
+      }
+      .about p{
+        color: #b2b2b2;
+      }
+      .about span{
+        font-weight: 600;
+        color: white;
+      }
+      .about h3{
+        font-weight: 300;
+        margin: 50px 0;
+      }
+      .container{
+        width: 100%;
+        background-color: #b2b2b2;
+      }
+
+    </style>
+
+
+
+
+
+
+  </head>
+  <body style="background-color:#000000;">
+    <aside>
+      <nav>
+        <img src = "person.jpg" alt = "Failed to upload photo">
+        <a href = "#home"><i class = "material-icons md-36">Home</i></a>
+        <p>Home</p>
+        <a href = "#about"><i class = "material-icons md-36">person</i></a>
+        <p>About</p>    
+        <a href = "#folio"><i class = "material-icons md-36">image</i></a>
+        <p>Folio</p>
+        <a href = "#contact"><i class = "material-icons md-36">mail</i></a>
+        <p>Contact</p>  
+      </nav>
+    </aside>
+
+    <main>
+      <br class = "home" id = "home"><br><br>
+        <h1>I am Junxian Qu</h1>
+        <h5>Computer Engineering Graduate at UC San Diego</h5>
+      </header>
+
+    </main>
+
+    <setction class = "about" id = "about">
+      <h2>About me</h2>
+      <p><span> I'm Junxian </span>I'm finding Software Developing Engineer intern</p>
+      <p>I have experience with Java, Python, html CSS and MATLAB</p>
+    </setction>
+
+    <section class = "folio" id = "folio">
+      <h2>Folio</h2>
+      <div class="row-halves">
+        <div class="col">
+          <h3>Experience</h3>
+          <p>
+            Midea. Co.  Motor Simulation Engineer.
+            Designing GUI for motor designer, optimizing motor-analytical algorithm.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Experience</h3>
+          <p>
+            Midea. Co.  Motor Simulation Engineer.
+            Designing GUI for motor designer, optimizing motor-analytical algorithm.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id = "contact">
+      <h2>Contact</h2>
+      <div class="container">
+        <form action="">
+          <label for="name" >Name</label>
+          <input type="text" id = "name" name = "name">
+          <label for="email">Email</label>
+          <input type="text" id = "email" name = "email">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" style = "height: 200"></textarea>
+          <input type="submit" id = "message" name = "message">
+        </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <section class="top-bar">
+        <a href=""><i class = "fab fa-github"></i></a>
+      </section>
+      <section class = "bottom-bar">
+        <p>&copy 2021 | all rights reserved</p>
+      </section>
+    </footer>
+  </body>
+</html>
